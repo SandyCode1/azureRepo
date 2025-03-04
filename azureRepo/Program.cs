@@ -9,6 +9,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Enable static file serving
+app.UseStaticFiles();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
